@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Images from "./Images";
 import images from './images.json';
+import "./style.css";
 
 class MainPage extends Component {
   state = {
@@ -10,22 +11,26 @@ class MainPage extends Component {
     clicked: false,
   };
 
-  scoreIncrease = (img) => {
-    // const name = img.target.name;
-    // const value = img.target.value;
-
-    console.log("BUTT")
-    if (this.state.clicked === false) {
-      this.setState({ score: this.state.score + 1 });
-      this.setState({ topScore: this.state.topScore + 1 });
-      this.setState({ clicked: true });
-      // this.setState({ [name]: value });
-    }
-    else {
-      this.setState({ score: 0 });
-      this.setState({ topScore: this.state.topScore});
-    }
+  scoreIncrease = () => {
+    this.setState({ score: this.state.score + 1 });
+    this.setState({ topScore: this.state.topScore + 1 });
+    this.setState(state => ({ clicked: !state.clicked}))
   };
+
+  resetScore = () => {
+    this.setState(
+      {
+        score: 0,
+        topScore: this.state.topScore
+      })
+  };
+
+  imageClick = (Images) => {
+    this.state.clicked ? this.resetScore() : this.scoreIncrease()
+  };
+
+
+
 
   render() {
     return (
@@ -35,12 +40,14 @@ class MainPage extends Component {
           topScore={this.state.topScore}
         />
         {images.map(item => (
-          <div>
+          <div class="image-container">
             <Images
               name={item.image}
               id={item.id}
-              onClick={this.scoreIncrease}
-              key={item.id} />
+              onClick={this.imageClick}
+              key={item.id}
+              clicked = {item.clicked}
+            />
           </div>
         ))}
       </div>
