@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/clickyreact/static/css/main.30851948.chunk.css",
+    "main.js": "/clickyreact/static/js/main.0fe66451.chunk.js",
+    "main.js.map": "/clickyreact/static/js/main.0fe66451.chunk.js.map",
+    "runtime-main.js": "/clickyreact/static/js/runtime-main.68fcc5c5.js",
+    "runtime-main.js.map": "/clickyreact/static/js/runtime-main.68fcc5c5.js.map",
+    "static/js/2.adb5cba0.chunk.js": "/clickyreact/static/js/2.adb5cba0.chunk.js",
+    "static/js/2.adb5cba0.chunk.js.map": "/clickyreact/static/js/2.adb5cba0.chunk.js.map",
+    "index.html": "/clickyreact/index.html",
+    "precache-manifest.672ca7848ae3998035091738c5a3fc30.js": "/clickyreact/precache-manifest.672ca7848ae3998035091738c5a3fc30.js",
+    "service-worker.js": "/clickyreact/service-worker.js",
+    "static/css/main.30851948.chunk.css.map": "/clickyreact/static/css/main.30851948.chunk.css.map",
+    "static/js/2.adb5cba0.chunk.js.LICENSE": "/clickyreact/static/js/2.adb5cba0.chunk.js.LICENSE",
+    "static/media/dog1.jpeg": "/clickyreact/static/media/dog1.db3bea88.jpeg",
+    "static/media/dog10.jpeg": "/clickyreact/static/media/dog10.f3a438ec.jpeg",
+    "static/media/dog11.jpeg": "/clickyreact/static/media/dog11.28628c40.jpeg",
+    "static/media/dog12.jpeg": "/clickyreact/static/media/dog12.ecdb41a2.jpeg",
+    "static/media/dog13.jpeg": "/clickyreact/static/media/dog13.f07fb76c.jpeg",
+    "static/media/dog14.jpeg": "/clickyreact/static/media/dog14.02565b6b.jpeg",
+    "static/media/dog15.jpeg": "/clickyreact/static/media/dog15.495758f8.jpeg",
+    "static/media/dog16.jpeg": "/clickyreact/static/media/dog16.c4b2d7ac.jpeg",
+    "static/media/dog2.jpeg": "/clickyreact/static/media/dog2.c30190a3.jpeg",
+    "static/media/dog3.jpeg": "/clickyreact/static/media/dog3.a1460308.jpeg",
+    "static/media/dog4.jpeg": "/clickyreact/static/media/dog4.372db85e.jpeg",
+    "static/media/dog5.jpeg": "/clickyreact/static/media/dog5.f08c9073.jpeg",
+    "static/media/dog6.jpeg": "/clickyreact/static/media/dog6.80923a35.jpeg",
+    "static/media/dog7.jpeg": "/clickyreact/static/media/dog7.a311dd49.jpeg",
+    "static/media/dog8.jpeg": "/clickyreact/static/media/dog8.216fee9e.jpeg",
+    "static/media/dog9.jpeg": "/clickyreact/static/media/dog9.95a9fe2b.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68fcc5c5.js",
+    "static/js/2.adb5cba0.chunk.js",
+    "static/css/main.30851948.chunk.css",
+    "static/js/main.0fe66451.chunk.js"
+  ]
+}
