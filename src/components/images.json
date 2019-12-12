@@ -1,0 +1,43 @@
+[
+  {
+      "id": 1,
+      "image": "dog1.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "image": "dog2.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "image": "dog3.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "image": "dog4.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 5,
+      "image": "dog5.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "image": "dog6.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 7,
+      "image": "dog7.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "image": "dog8.jpeg",
+      "clicked": false
+    }
+  ]
+  

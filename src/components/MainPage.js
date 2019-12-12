@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import Images from "./Images";
+import images from './images.json';
 
 class MainPage extends Component {
   state = {
@@ -10,15 +11,15 @@ class MainPage extends Component {
   };
 
   scoreIncrease = (img) => {
-    const key = img.target.value;
-    const value = img.target.value;
+    // const name = img.target.name;
+    // const value = img.target.value;
 
     console.log("BUTT")
     if (this.state.clicked === false) {
       this.setState({ score: this.state.score + 1 });
       this.setState({ topScore: this.state.topScore + 1 });
       this.setState({ clicked: true });
-      this.setState({ [key]: value });
+      // this.setState({ [name]: value });
     }
     else {
       this.setState({ score: 0 });
@@ -33,10 +34,15 @@ class MainPage extends Component {
           score={this.state.score}
           topScore={this.state.topScore}
         />
-        <Images
-        onClick={this.scoreIncrease}
-        >
-        </Images>
+        {images.map(item => (
+          <div>
+            <Images
+              name={item.image}
+              id={item.id}
+              onClick={this.scoreIncrease}
+              key={item.id} />
+          </div>
+        ))}
       </div>
     );
   };
