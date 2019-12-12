@@ -9,12 +9,14 @@ class MainPage extends Component {
     score: 0,
     topScore: 0,
     clicked: false,
+    key: this.value
   };
 
-  scoreIncrease = () => {
+  scoreIncrease = (key) => {
+    this.key: this.value
     this.setState({ score: this.state.score + 1 });
     this.setState({ topScore: this.state.topScore + 1 });
-    this.setState(state => ({ clicked: !state.clicked}))
+    this.setState({ clicked: true})
   };
 
   resetScore = () => {
@@ -25,14 +27,11 @@ class MainPage extends Component {
       })
   };
 
-  imageClick = (Images) => {
+  imageClick = key => {
     this.state.clicked ? this.resetScore() : this.scoreIncrease()
   };
 
-
-
-
-  render() {
+  render() { 
     return (
       <div>
         <Header
@@ -46,7 +45,6 @@ class MainPage extends Component {
               id={item.id}
               onClick={this.imageClick}
               key={item.id}
-              clicked = {item.clicked}
             />
           </div>
         ))}
