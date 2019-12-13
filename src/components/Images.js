@@ -2,9 +2,11 @@ import React from "react";
 import "./style.css";
 
 function Images(props) {
+  console.log(props.clicked)
+  console.log(props.id)
   return (
     <div>
-      <img onClick={props.onClick} src={ require("../img/" + props.name)} value={props.key} alt={props.name}></img>
+      <img onClick={() => this.props.onClick(this.props.id)} src={ require("../img/" + props.name)} value={props.name} alt={props.name}></img>
     </div>
 
   );
