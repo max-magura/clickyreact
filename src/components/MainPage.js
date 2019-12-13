@@ -7,7 +7,7 @@ import "./style.css";
 class MainPage extends Component {
   state = {
     score: 0,
-    // topScore: 0,
+    // topScore: 0
     images: images
   };
 
