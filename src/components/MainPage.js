@@ -23,6 +23,7 @@ class MainPage extends Component {
   };
 
   resetScore = () => {
+    alert("you've already clicked that image...resetting!")
     let itemsArray = this.state.images
     itemsArray.forEach(element => {
     
